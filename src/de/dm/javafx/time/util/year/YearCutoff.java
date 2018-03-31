@@ -133,11 +133,11 @@ public class YearCutoff implements ShortYearInterpreter {
 	/* CLASS METHODS */
 	
 	/**
-	 * 
-	 * 
+	 * Interprets a {@code String}, which may contain a short year, to get a long year. For more information see {@link YearCutoff}.
 	 * @throws NumberParseException if the parameter couldn't be parsed with {@link Integer#parseInt(String)},
 	 * e.g. because it didn't contain a year.
 	 * @return the year parsed and interpreted from the {@code String}
+	 * @see YearCutoff
 	 */
 	public int interpret(String shortYear) throws NumberParseException {
 		YearArgument year = new YearArgument(shortYear);

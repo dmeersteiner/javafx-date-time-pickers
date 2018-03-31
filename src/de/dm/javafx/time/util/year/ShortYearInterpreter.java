@@ -24,12 +24,18 @@
 
 package de.dm.javafx.time.util.year;
 
+/**
+ * An interface for interpreting short year {@code String}s,
+ * usually consisting of two or less digits, to get long years.
+ * @author David Meersteiner
+ * @version 0.1.0
+ */
 public interface ShortYearInterpreter {
 
 	/**
-	 * 
-	 * @param shortYear
-	 * @return the year parsed and interpreted from the {@code String}
+	 * Interprets a {@code String}, which may contain a short year, to get a long year.
+	 * @param shortYear the possible short year.
+	 * @return the year parsed and interpreted from the {@code String}.
 	 */
 	int interpret(String shortYear);
 	
